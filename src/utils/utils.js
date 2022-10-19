@@ -10,8 +10,8 @@ export const getReviews = () => {
   });
 };
 
-export const getReviewsById = (reviewID) => {
-  return gamesAPI.get(`/reviews/${reviewID}`).then(({ data }) => {
+export const getReviewsById = (review_id) => {
+  return gamesAPI.get(`/reviews/${review_id}`).then(({ data }) => {
     return data.review;
   });
 };

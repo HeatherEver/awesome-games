@@ -14,7 +14,7 @@ function AllReviews() {
   return (
     <div className="review-gallery">
       {reviews.map((review) => {
-        return <ReviewCard review={review} />;
+        return <ReviewCard key={review.review_id} review={review} />;
       })}
     </div>
   );

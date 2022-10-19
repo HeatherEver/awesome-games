@@ -71,6 +71,20 @@ body {
   box-shadow: 5px 8px #9b9b9b;
 }
 
+.single-review-card {
+  max-height: fit-content;
+  border: 2px black solid;
+  display: grid;
+  grid-column: span 2;
+  justify-self: center;
+  grid-template-columns: 2fr;
+  grid-template-rows: auto auto auto auto;
+}
+.single-review-img {
+  height: 100px;
+  width: 100px;
+}
+
 @keyframes textclip {
   to {
     background-position: 200% center;

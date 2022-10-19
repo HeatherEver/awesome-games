@@ -10,13 +10,13 @@ function ReviewCard({ review }) {
           alt={review.title}
         />
       </div>
-      <Link className="review-title" to={`/reviews/${review.review_id}`}>
+      <Link className="review-title" to={`/review/${review.review_id}`}>
         <h4 className="review-title text">{review.title}</h4>
       </Link>
       <p id="review-body" className="text">
         {review.review_body}
       </p>
-      <Link className="read-more" to={`/reviews/${review.review_id}`}>
+      <Link className="read-more" to={`/review/${review.review_id}`}>
         <p>Read more...</p>
       </Link>
     </div>
